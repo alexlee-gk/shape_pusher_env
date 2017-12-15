@@ -8,3 +8,8 @@ cd mujoco-py
 git apply ../mujoco-py.patch
 python setup.py install
 ```
+
+## Install other dependencies
+```
+pip install -r requirements.txt
+```
