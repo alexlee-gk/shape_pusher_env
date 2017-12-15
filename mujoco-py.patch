@@ -1,0 +1,13 @@
+diff --git a/mujoco_py/mjtypes.py b/mujoco_py/mjtypes.py
+index fc5cec4..5ea32cf 100644
+--- a/mujoco_py/mjtypes.py
++++ b/mujoco_py/mjtypes.py
+@@ -4407,7 +4407,7 @@ class MjModelWrapper(object):
+     
+     @geom_rgba.setter
+     def geom_rgba(self, value):
+-        val_ptr = np.array(value, dtype=np.float64).ctypes.data_as(POINTER(c_float))
++        val_ptr = np.array(value, dtype=np.float32).ctypes.data_as(POINTER(c_float))
+         memmove(self._wrapped.contents.geom_rgba, val_ptr, self.ngeom*4 * sizeof(c_float))
+     
+     @property
