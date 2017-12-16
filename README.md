@@ -6,7 +6,7 @@ Example observations of this environment (8 observations of different trajectori
 ![Alt Text](https://github.com/alexlee-gk/shape_pusher_env/raw/master/images/example.gif)
 
 ## Install mujoco-py dependency
-For correct behavior of setting colors, apply patch to mujoco-py source and install from source.
+Install MuJoCo 1.3. For correct behavior of dynamically changing colors, apply patch to mujoco-py source and install from source.
 ```
 git clone --branch 0.5.7 git@github.com:openai/mujoco-py.git
 cd mujoco-py
